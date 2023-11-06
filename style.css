@@ -1,0 +1,20 @@
+body {
+    background-color: #1e1e1e;
+    font-family: 'Poppins', sans-serif;
+    color: #CACACA;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.text{
+    background-color: #c47a7a;
+    padding: 1rem;
+    font-size: 40px;
+}
+
+
