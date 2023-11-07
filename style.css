@@ -1,7 +1,7 @@
 body {
     background-color: #1e1e1e;
     font-family: 'Poppins', sans-serif;
-    color: #CACACA;
+    color: #fff;
 }
 
 .main{
@@ -9,12 +9,22 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
 }
 
 .text{
-    background-color: #c47a7a;
-    padding: 1rem;
-    font-size: 40px;
+    font-size: 1rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    font-weight: 300;
+}
+
+.links{
+    margin: 1rem;
 }
 
 
