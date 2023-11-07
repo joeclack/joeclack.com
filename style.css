@@ -1,10 +1,11 @@
 body {
-    background-color: #1e1e1e;
+    background-color: #ffffff;
     font-family: 'Poppins', sans-serif;
-    color: #fff;
+    color: #1e1e1e;
+    margin: 0;
 }
 
-.main{
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,19 +13,41 @@ body {
     flex-direction: column;
 }
 
-.text{
+.name-container {
     font-size: 1rem;
-    height: 100vh;
     display: flex;
     align-items: center;
+    height: 50vh;
+    height: 100vh;
 }
 
-h1{
-    font-weight: 300;
+.name {
+    font-weight: 500;
+    transition: transform .7s ease;
 }
 
-.links{
-    margin: 1rem;
+.name:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    cursor: pointer;
+    
 }
 
+.name:hover::before,
+.name:hover::after {
+    animation-name: slide;
+    animation-duration: .5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+.icon:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.links-container {
+    padding-bottom: auto;
+}
 
