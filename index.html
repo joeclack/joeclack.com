@@ -12,13 +12,27 @@
 </head>
 <body>
     <div class="main">
-        <div id="jokes-container">
-            <button class="newJokeBtn" onclick="reloadPage()">New joke</button>
-            <div id="joke"></div>
-        </div>
         <div class="name-container">
             <h1 class="name">JoeClack.com</h1>
         </div>
+        <div id="jokes-container">
+            <button class="newJokeBtn" onclick="newJoke()">New joke</button>
+            <div id="joke"></div>
+            <div class="rate">
+                <div class="rate-text">
+                    <p>Rate the joke</p>
+                </div>
+                <div class="rate-box">
+                    <ul>
+                        <li><iconify-icon icon="fa6-solid:thumbs-up" class="icon" style="color: #1e1e1e; font-size: 1.5rem;"></iconify-icon></li>
+                        <li><iconify-icon icon="fa6-solid:thumbs-down" class="icon" style="color: #1e1e1e; font-size: 1.5rem;"></iconify-icon></li>
+                    </ul>
+                </div>
+                
+                
+            </div>
+        </div>
+        
         
         
         
@@ -32,8 +46,7 @@
 
 <script>
 
-function reloadPage() {
-
+function getJoke() {
     $(document).ready(function() {
         $('#joke').empty();
     var limit = 1;
@@ -57,7 +70,13 @@ function reloadPage() {
         }
     });
 });
-        }
+}
+
+// window.onload = getJoke();
+
+function newJoke() {
+    getJoke();
+    }
 
 </script>
 

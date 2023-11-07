@@ -9,7 +9,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     flex-direction: column;
 }
 
@@ -17,7 +16,6 @@ body {
     font-size: 1rem;
     display: flex;
     align-items: center;
-    height: 50vh;
     height: 100vh;
 }
 
@@ -56,6 +54,7 @@ body {
 
 #jokes-container {
     padding: 1rem;
+    width: 60vw;
     background: #F3F5F6;
     margin: 1rem;
     border-radius: 1rem;
@@ -78,3 +77,37 @@ body {
     cursor: pointer;
 }
 
+.rate {
+    margin-top: 1rem;
+    padding: 0rem 1rem 0rem 1rem;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+}
+
+.rate-box {
+    display: flex;
+    padding: 0;
+}
+
+.rate-text p {
+    font-weight: 700;
+}
+
+.rate-box ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.rate-box ul li {
+    padding-right: 1rem;
+}
+
+@media only screen and (max-width: 850px) {
+    .rate {
+        flex-direction: column;
+        align-items: center;
+    }
+}
