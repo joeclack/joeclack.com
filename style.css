@@ -55,9 +55,18 @@ body {
 }
 
 #jokes-container {
-    padding: 1rem;
+    padding: 0 1rem;
     background: #f4f4f4;
     margin: 1rem;
     border-radius: 1rem;
     box-shadow: 10px;
+    width: 95vw;
+    box-shadow: 0.3rem 0.3rem #ffffff;
+}
+
+.title {
+    text-decoration: underline;
+    font-size: 1.3rem;
+    color: #7b4fdb;
+    font-weight: 700
 }
