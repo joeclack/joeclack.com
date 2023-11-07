@@ -1,5 +1,5 @@
 body {
-    background-color: #ffffff;
+    background-color: #FBFCFF;
     font-family: 'Poppins', sans-serif;
     color: #1e1e1e;
     margin: 0;
@@ -55,18 +55,26 @@ body {
 }
 
 #jokes-container {
-    padding: 0 1rem;
-    background: #f4f4f4;
+    padding: 1rem;
+    background: #F3F5F6;
     margin: 1rem;
     border-radius: 1rem;
     box-shadow: 10px;
-    width: 95vw;
-    box-shadow: 0.3rem 0.3rem #ffffff;
+    display: flex;
+    flex-direction: column;
+    color: #1e1e1e;
+    
 }
 
-.title {
-    text-decoration: underline;
-    font-size: 1.3rem;
-    color: #7b4fdb;
-    font-weight: 700
+.newJokeBtn {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-weight: 100;
+    font-variant-caps: all-petite-caps;
+    border-radius: 0.5rem;
+    border-width: 0;
+    background: #1e1e1e;
+    color: #FBFCFF;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
+

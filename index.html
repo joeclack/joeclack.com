@@ -12,9 +12,9 @@
 </head>
 <body>
     <div class="main">
-
         <div id="jokes-container">
-            <p class="title">Joke of the day</p>
+            <button class="newJokeBtn" onclick="reloadPage()">New joke</button>
+            <div id="joke"></div>
         </div>
         <div class="name-container">
             <h1 class="name">JoeClack.com</h1>
@@ -31,7 +31,11 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script>
-$(document).ready(function() {
+
+function reloadPage() {
+
+    $(document).ready(function() {
+        $('#joke').empty();
     var limit = 1;
     $.ajax({
         method: 'GET',
@@ -42,7 +46,7 @@ $(document).ready(function() {
             // Handle the API response here
             console.log(result);
             // Assuming the API response is an array of jokes
-            var jokesContainer = $('#jokes-container');
+            var jokesContainer = $('#joke');
             result.forEach(function(joke) {
                 // Append each joke to the jokes container
                 jokesContainer.append('<p>' + joke.joke + '</p>');
@@ -53,6 +57,8 @@ $(document).ready(function() {
         }
     });
 });
+        }
+
 </script>
 
 </html>
