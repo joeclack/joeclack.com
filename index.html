@@ -12,69 +12,22 @@
 </head>
 <body>
     <div class="main">
-        <div class="name-container">
-            <h1 class="name">JoeClack.com</h1>
+        <div class="header container">
+            <h1>JoeClack.com</h1>
         </div>
-        <!-- <div id="jokes-container">
-            <button class="newJokeBtn" onclick="newJoke()">New joke</button>
-            <div id="joke"></div>
-            <div class="rate">
-                <div class="rate-text">
-                    <p>Rate the joke</p>
-                </div>
-                <div class="rate-box">
-                    <ul>
-                        <li><iconify-icon icon="fa6-solid:thumbs-up" class="icon" style="color: #1e1e1e; font-size: 1.5rem;"></iconify-icon></li>
-                        <li><iconify-icon icon="fa6-solid:thumbs-down" class="icon" style="color: #1e1e1e; font-size: 1.5rem;"></iconify-icon></li>
-                    </ul>
-                </div>
-                
-                
+        <div class="content container">
+            
+        </div>
+        <div class="footer container">
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/joeclack" target="_blank">
+                    <iconify-icon class="icon l-icon" icon="prime:linkedin" style="color: #1e1e1e; font-size: 2rem;"></iconify-icon>
+                </a>
+                <a href="mailto: joebclack@gmail.com">
+                    <iconify-icon icon="prime:envelope" class="icon e-icon" style="color: #1e1e1e; font-size: 2rem;"></iconify-icon>
+                </a>
             </div>
-        </div> -->
-        
-        <div class="links-container">
-            <a href="https://www.linkedin.com/in/joeclack" target="_blank"><iconify-icon class="icon" icon="mdi:linkedin" style="color: #1e1e1e; font-size: 2rem;"></iconify-icon></a>
-            <a href="mailto: joebclack@gmail.com"><iconify-icon icon="mdi:envelope" class="icon" style="color: #1e1e1e; font-size: 2rem;"></iconify-icon></a>
         </div>
     </div>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<script>
-
-function getJoke() {
-    $(document).ready(function() {
-        $('#joke').empty();
-    var limit = 1;
-    $.ajax({
-        method: 'GET',
-        url: 'https://api.api-ninjas.com/v1/jokes?limit=' + limit,
-        headers: { 'X-Api-Key': '9+fxiwb/dbce0l8qNfPEVw==TZ7mARfwqrJ3XoAz' },
-        contentType: 'application/json',
-        success: function(result) {
-            // Handle the API response here
-            console.log(result);
-            // Assuming the API response is an array of jokes
-            var jokesContainer = $('#joke');
-            result.forEach(function(joke) {
-                // Append each joke to the jokes container
-                jokesContainer.append('<p>' + joke.joke + '</p>');
-            });
-        },
-        error: function ajaxError(jqXHR) {
-            console.error('Error: ', jqXHR.responseText);
-        }
-    });
-});
-}
-
-// window.onload = getJoke();
-
-function newJoke() {
-    getJoke();
-    }
-
-</script>
-
 </html>
