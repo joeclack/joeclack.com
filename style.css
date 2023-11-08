@@ -26,6 +26,11 @@ body {
     height: auto;
 }
 
+.header a {
+    text-decoration: none;
+    color: #1e1e1e;
+}
+
 .header h1, .icon {
     position: relative;
 }
