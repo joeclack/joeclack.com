@@ -44,7 +44,7 @@ body {
     transition: transform .3s ease-in-out;
 }
   
-.header h1:hover::before, .icon:hover::before {
+.header h1:hover::before, .icon:hover::before, .header h1:active::before, .icon:active::before {
 transform-origin: left;
 transform: scaleX(1);
 }
